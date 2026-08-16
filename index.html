@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Datenschutzerklärung – Schweizer Bus Anzeige</title>
+<style>
+  :root {
+    --amber:  #ffb000;
+    --accent: #8a5800;
+    --ground: #f8f5ef;
+    --panel:  #ffffff;
+    --line:   #e3dbd0;
+    --ink:    #1c1813;
+    --muted:  #6c6255;
+    --board:  #0c0a07;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --accent: #ffb000;
+      --ground: #0d0b08;
+      --panel:  #17140f;
+      --line:   #302921;
+      --ink:    #ece5d8;
+      --muted:  #9c9184;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    font-size: 17px;
+    line-height: 1.65;
+    margin: 0;
+    padding: 0 20px 80px;
+  }
+  main { max-width: 720px; margin: 0 auto; }
+  p, li { max-width: 66ch; }
+  a { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+
+  header {
+    background: var(--board);
+    color: var(--amber);
+    border-radius: 8px;
+    margin: 34px 0 26px;
+    padding: 22px 24px;
+    font-family: ui-monospace, "DejaVu Sans Mono", Consolas, monospace;
+  }
+  header .app {
+    font-size: clamp(17px, 4vw, 23px);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  header .doc { margin: 6px 0 0; font-size: 14px; letter-spacing: 1px; color: #c98e00; }
+
+  h2 {
+    font: 600 clamp(17px, 3vw, 20px)/1.3 ui-monospace, "DejaVu Sans Mono", Consolas, monospace;
+    letter-spacing: 0.5px;
+    margin: 38px 0 10px;
+    padding-top: 16px;
+    border-top: 1px solid var(--line);
+  }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 16px 20px;
+    margin: 18px 0;
+  }
+  .card p { margin: 0; }
+  .lead { font-size: 1.06em; }
+  code {
+    font-family: ui-monospace, "DejaVu Sans Mono", Consolas, monospace;
+    font-size: 0.88em;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    padding: 1px 5px;
+  }
+  footer {
+    border-top: 1px solid var(--line);
+    margin-top: 44px;
+    padding-top: 18px;
+    color: var(--muted);
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <p class="app">Schweizer Bus Anzeige</p>
+  <p class="doc">Datenschutzerklärung</p>
+</header>
+
+<p class="lead">Die App <strong>Schweizer Bus Anzeige</strong> zeigt Abfahrtszeiten des
+Schweizer öffentlichen Verkehrs an. Sie erhebt dabei keine personenbezogenen Daten,
+führt kein Benutzerkonto, zeigt keine Werbung und verwendet keine Analyse- oder
+Tracking-Dienste.</p>
+
+<h2>Verantwortliche Stelle</h2>
+<div class="card">
+  <p>Florian Neugebauer<br>
+  <a href="mailto:florianneugebauer2@gmail.com">florianneugebauer2@gmail.com</a></p>
+</div>
+
+<h2>Welche Daten auf dem Gerät bleiben</h2>
+<p>Die App speichert Ihre Einstellungen ausschliesslich lokal auf dem Gerät:</p>
+<ul>
+  <li>die gewählten Haltestellen und deren Fahrtrichtung</li>
+  <li>die überwachte Bahnstrecke der Störungswarnung</li>
+  <li>die Einstellung zur Bildschirmausrichtung</li>
+</ul>
+<p>Diese Angaben verlassen das Gerät nicht, werden nicht an uns übermittelt und mit der
+Deinstallation der App gelöscht. Es gibt keine Server der App und damit auch keine
+Benutzerkonten, Profile oder Protokolle auf unserer Seite.</p>
+
+<h2>Welche Daten beim Abruf an Dritte gehen</h2>
+<p>Um Abfahrtszeiten anzuzeigen, muss die App diese abrufen. Sie wendet sich dafür
+direkt vom Gerät aus an zwei Schweizer Fahrplandienste. Dabei werden technisch
+zwangsläufig übermittelt:</p>
+<ul>
+  <li>die IP-Adresse Ihres Geräts</li>
+  <li>die Haltestelle beziehungsweise Strecke, die Sie eingestellt haben</li>
+  <li>übliche technische Angaben des Abrufs, unter anderem die Spracheinstellung
+      des Geräts</li>
+</ul>
+<p>Es werden keine Kennungen der App, keine Gerätekennung und keine Standortdaten
+mitgesendet. Die App fragt keine Standortberechtigung an.</p>
+
+<div class="card">
+  <p><strong>Abfahrtszeiten</strong> — <a href="https://transport.opendata.ch/"
+  rel="noopener">transport.opendata.ch</a><br>
+  <strong>Bahnmeldungen und Streckenstörungen</strong> — <a href="https://search.ch/"
+  rel="noopener">search.ch</a>, Datenschutzerklärung unter
+  <a href="https://search.ch/privacy" rel="noopener">search.ch/privacy</a></p>
+</div>
+
+<p>Für die Verarbeitung durch diese Anbieter gelten deren eigene
+Datenschutzbestimmungen. Wir haben darauf keinen Einfluss und erhalten von dort keine
+Daten über Sie.</p>
+
+<h2>Rechtsgrundlage und Zweck</h2>
+<p>Der beschriebene Abruf ist erforderlich, damit die App ihre einzige Funktion
+erfüllen kann — die Anzeige aktueller Abfahrtszeiten. Massgeblich sind das Schweizer
+Datenschutzgesetz (DSG) sowie, soweit anwendbar, Art. 6 Abs. 1 lit. b der
+Datenschutz-Grundverordnung (Erfüllung des Nutzungsvertrags). Eine Verarbeitung zu
+Werbe-, Profilierungs- oder Analysezwecken findet nicht statt.</p>
+
+<h2>Berechtigungen der App</h2>
+<ul>
+  <li><code>INTERNET</code> — für den Abruf der Fahrplandaten</li>
+  <li><code>ACCESS_NETWORK_STATE</code> — um zu erkennen, ob eine Verbindung besteht</li>
+</ul>
+<p>Weitere Berechtigungen fordert die App nicht an. Sie greift weder auf Standort,
+Kontakte, Kamera, Mikrofon noch auf Dateien zu.</p>
+
+<h2>Speicherdauer</h2>
+<p>Wir speichern keine Daten, folglich gibt es auch keine Löschfristen. Ihre lokal
+gespeicherten Einstellungen können Sie jederzeit im Einstellungsfenster der App
+ändern oder durch Deinstallation vollständig entfernen.</p>
+
+<h2>Ihre Rechte</h2>
+<p>Ihnen stehen die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung der
+Verarbeitung und Datenübertragbarkeit zu. Da wir keine personenbezogenen Daten
+erheben oder speichern, laufen entsprechende Anfragen an uns allerdings ins Leere.
+Für Auskünfte zu den Daten, die bei den oben genannten Fahrplandiensten anfallen,
+wenden Sie sich bitte direkt an diese. Bei Fragen zu dieser Erklärung erreichen Sie
+uns unter der oben genannten Adresse.</p>
+
+<h2>Kinder</h2>
+<p>Die App richtet sich nicht gezielt an Kinder und erhebt von niemandem Daten,
+unabhängig vom Alter.</p>
+
+<h2>Änderungen dieser Erklärung</h2>
+<p>Ändert sich die Funktionsweise der App, wird diese Erklärung angepasst. Massgeblich
+ist jeweils die hier veröffentlichte Fassung mit dem unten genannten Stand.</p>
+
+<footer>
+  Stand: 16. August 2026 · Schweizer Bus Anzeige ·
+  <a href="mailto:florianneugebauer2@gmail.com">florianneugebauer2@gmail.com</a>
+</footer>
+
+</main>
+</body>
+</html>
