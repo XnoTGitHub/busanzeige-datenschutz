@@ -1,7 +1,7 @@
-# Datenschutzerklärung – Schweizer Bus Anzeige
+# Datenschutzerklärung – Busaazeig
 
 Öffentliche Seite mit der Datenschutzerklärung der Android-App
-**Schweizer Bus Anzeige** (`com.busanzeige.abfahrten`).
+**Busaazeig** (`ch.busazeig.app`).
 
 Dieses Repository existiert nur, damit die Erklärung unter einer stabilen
 öffentlichen URL erreichbar ist — die Play Console verlangt sie als
